@@ -1,12 +1,16 @@
-const { createProxyMiddleware } = require('http-proxy-middleware')
+// const { createProxyMiddleware } = require('http-proxy-middleware')
 
-module.exports = createProxyMiddleware({
-  target: 'http://jsonplaceholder.typicode.com/',
-  changeOrigin: true,
-  pathRewrite: {
-    '^/api/': ''
-  }
-})
+module.exports = (req, res) => {
+  res.send('hello world')
+}
+
+// module.exports = createProxyMiddleware({
+//   target: 'http://jsonplaceholder.typicode.com/',
+//   changeOrigin: true,
+//   pathRewrite: {
+//     '^/api/': ''
+//   }
+// })
 
 // module.exports = (req, res) => {
 //   res.json({
