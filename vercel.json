@@ -1,11 +1,11 @@
 {
   "routes": [
     {
-      "src": "/api/boss/(.*)",
+      "src": "/api/boss(.*)",
       "dest": "/api/boss"
     },
     {
-      "src": "/api/front/(.*)",
+      "src": "/api/front(.*)",
       "dest": "/api/front"
     }
   ]
