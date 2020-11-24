@@ -1,7 +1,7 @@
-// const { createProxyMiddleware } = require('http-proxy-middleware')
+const { createProxyMiddleware } = require('http-proxy-middleware')
 
 module.exports = (req, res) => {
-  res.send('hello world')
+  res.send(JSON.stringify(createProxyMiddleware))
 }
 
 // module.exports = createProxyMiddleware({
