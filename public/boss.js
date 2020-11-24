@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-  res.send('a')
+  res.send('public boss')
 }
