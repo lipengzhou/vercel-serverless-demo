@@ -1,9 +1,15 @@
-const { createProxyMiddleware } = require('http-proxy-middleware')
+// const { createProxyMiddleware } = require('http-proxy-middleware')
 
-module.exports = createProxyMiddleware({
-  target: 'http://eduboss.lagou.com',
-  changeOrigin: true
-})
+module.exports = (req, res) => {
+  res.json({
+    url: req.url
+  })
+}
+
+// module.exports = createProxyMiddleware({
+//   target: 'http://eduboss.lagou.com',
+//   changeOrigin: true
+// })
 
 // module.exports = createProxyMiddleware({
 //   target: 'http://jsonplaceholder.typicode.com/',
